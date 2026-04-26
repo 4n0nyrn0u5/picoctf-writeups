@@ -68,7 +68,7 @@ picoctf-writeups/
 ## 🔗 Connect
 
 - 🌐 GitHub: [4n0nyrn0u5](https://github.com/4n0nyrn0u5)
-- 🏆 PicoCTF: [4n0nyrn0u5](https://play.picoctf.org)
+- 🏆 PicoCTF: [anonyrnous](https://play.picoctf.org)
 
 ---
 
