@@ -1,34 +1,34 @@
 # 🚩 PicoCTF Writeups
 
-> **By:** [4n0nyrn0u5](https://github.com/4n0nyrn0u5)  
-> **Platform:** [PicoCTF](https://picoctf.org)  
-> **Category:** Web Exploitation · Forensics · OSINT
+> **Platform:** [PicoCTF](https://picoctf.org/)
+> **Kategoriya:** Web Exploitation · Cryptography · Forensics · OSINT
+> **Muallif:** (https://github.com/4n0nyrn0u5)
+> **Yangilangan:** 26.04.2026
+
+Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun professional writeuplar to'plami.
 
 ---
 
-## About
-
-This repository contains my personal writeups for PicoCTF challenges. Each writeup includes a full step-by-step solution, tools used, and key takeaways to reinforce learning.
-
----
-
-## 📁 Structure
+## 📁 Fayl tuzilmasi
 
 ```
-picoctf-writeups/
-├── 01_client_side_recon.md       → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
-├── 02_http_and_headers.md        → GET aHEAD, WebDecode
-├── 03_authentication_sessions.md → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
-├── 04_server_side_attacks.md     → Crack the Gate 1 (SQLi), SSTI1
-└── 05_forensics_osint.md         → StegoRSA, Scavenger Hunt, Log Hunt
+📦 picoctf-writeups
+ ┣ 📄 README.md
+ ┣ 📄 01_client_side_recon.md       → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
+ ┣ 📄 02_http_and_headers.md        → GET aHEAD, WebDecode
+ ┣ 📄 03_authentication_sessions.md → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
+ ┣ 📄 04_server_side_attacks.md     → Crack the Gate 1, SSTI1
+ ┣ 📄 05_forensics_osint.md         → StegoRSA, Scavenger Hunt, Log Hunt
+ ┣ 📄 06_cryptography.md            → interencdec, Mod 26, The Numbers, 13
+ ┗ 📄 07_web_exploitation_medium.md → 3v@l, Secrets
 ```
 
 ---
 
-## 📊 Challenges
+## 📊 Challenges jadvali
 
-| # | Challenge | Category | Difficulty | Technique |
-|---|-----------|----------|------------|-----------|
+| # | Challenge | Kategoriya | Qiyinlik | Texnika |
+|---|-----------|------------|----------|---------|
 | 1 | Inspect HTML | Web | ⭐ | HTML source inspection |
 | 2 | Includes | Web | ⭐ | CSS/JS file inspection |
 | 3 | Insp3ct0r | Web | ⭐ | Multi-source DevTools |
@@ -44,34 +44,42 @@ picoctf-writeups/
 | 13 | Crack the Gate 1 | Web | ⭐⭐⭐ | SQL Injection |
 | 14 | SSTI1 | Web | ⭐⭐⭐ | Server-Side Template Injection |
 | 15 | StegoRSA | Forensics | ⭐⭐⭐ | Steganography + RSA |
-| 16 | Scavenger Hunt | OSINT | ⭐⭐ | Multi-source recon |
+| 16 | Scavenger Hunt | OSINT/Web | ⭐⭐ | Multi-source recon |
 | 17 | Log Hunt | Forensics | ⭐⭐ | Log file analysis |
+| 18 | interencdec | Cryptography | ⭐⭐ | Base64 + ROT13 |
+| 19 | Mod 26 | Cryptography | ⭐ | ROT13 |
+| 20 | The Numbers | Cryptography | ⭐ | A1Z26 cipher |
+| 21 | 13 | Cryptography | ⭐ | ROT13 |
+| 22 | 3v@l | Web | ⭐⭐⭐ | eval() injection / RCE |
+| 23 | Secrets | Web | ⭐⭐ | Hidden directory recon |
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Ishlatilgan toollar
 
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat&logo=burp-suite&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
-
-- **Browser DevTools** — Inspection, Sources, Network, Application tabs
+- **Browser DevTools** — Inspection, Sources, Network, Application
+- **Burp Suite** — HTTP interception va manipulation
 - **curl** — HTTP request manipulation
-- **jwt.io** — JWT decode/encode
-- **CyberChef** — Encoding/decoding
-- **steghide / zsteg** — Steganography extraction
-- **Python** — RSA decryption, custom scripts
+- **[jwt.io](https://jwt.io)** — JWT decode/encode
+- **CyberChef** — Encoding/decoding (Magic funksiya)
+- **sqlmap** — SQL injection avtomatlashtirish
+- **steghide / stegsolve / zsteg** — Steganography
+- **Python** — Custom scripts, RSA decryption, A1Z26 decode
+- **gobuster / ffuf** — Directory enumeration
+- **Nmap** — Port scanning
 
 ---
 
-## 🔗 Connect
+## 📚 Foydali resurslar
 
-- 🌐 GitHub: [4n0nyrn0u5](https://github.com/4n0nyrn0u5)
-- 🏆 PicoCTF: [anonyrnous](https://play.picoctf.org/users/anonyrnous)
+- [PicoCTF](https://picoctf.org/) — CTF platformasi
+- [OWASP Top 10](https://owasp.org/Top10/) — Web xavfsizlik asoslari
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — Bepul labs
+- [HackTricks](https://book.hacktricks.xyz/) — CTF va pentest reference
+- [CyberChef](https://gchq.github.io/CyberChef/) — Encoding/decoding tool
+- [dcode.fr](https://www.dcode.fr) — 500+ shifr decoder
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — Payload'lar to'plami
 
 ---
 
-> *"The quieter you become, the more you are able to hear."*  
-> — Kali Linux
-
+*Happy Hacking! 🔐*
