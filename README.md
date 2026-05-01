@@ -1,8 +1,8 @@
 # 🚩 PicoCTF Writeups
 
-> **Platform:** [PicoCTF](https://picoctf.org/)
-> **Kategoriya:** Web Exploitation · Cryptography · Forensics · OSINT
-> **Muallif:** (https://github.com/4n0nyrn0u5)
+> **Platform:** [PicoCTF](https://picoctf.org/)  
+> **Kategoriya:** Web Exploitation · Cryptography · Forensics · OSINT  
+> **Muallif:** [4n0nyrn0u5](https://github.com/4n0nyrn0u5)  
 > **Yangilangan:** 26.04.2026
 
 Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun professional writeuplar to'plami.
@@ -14,13 +14,13 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 ```
 📦 picoctf-writeups
  ┣ 📄 README.md
- ┣ 📄 01_client_side_recon.md       → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
- ┣ 📄 02_http_and_headers.md        → GET aHEAD, WebDecode
- ┣ 📄 03_authentication_sessions.md → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
- ┣ 📄 04_server_side_attacks.md     → Crack the Gate 1, SSTI1
- ┣ 📄 05_forensics_osint.md         → StegoRSA, Scavenger Hunt, Log Hunt
- ┣ 📄 06_cryptography.md            → interencdec, Mod 26, The Numbers, 13
- ┗ 📄 07_web_exploitation_medium.md → 3v@l, Secrets
+ ┣ 📄 01_client_side_recon.md        → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
+ ┣ 📄 02_http_and_headers.md         → GET aHEAD, WebDecode
+ ┣ 📄 03_authentication_sessions.md  → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
+ ┣ 📄 04_server_side_attacks.md      → Crack the Gate 1, SSTI1
+ ┣ 📄 05_forensics_osint.md          → StegoRSA, Scavenger Hunt, Log Hunt
+ ┣ 📄 06_cryptography.md             → interencdec, Mod 26, The Numbers, 13
+ ┗ 📄 07_web_exploitation_medium.md  → 3v@l, Secrets
 ```
 
 ---
@@ -60,7 +60,7 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 - **Browser DevTools** — Inspection, Sources, Network, Application
 - **Burp Suite** — HTTP interception va manipulation
 - **curl** — HTTP request manipulation
-- **[jwt.io](https://jwt.io)** — JWT decode/encode
+- **jwt.io** — JWT decode/encode
 - **CyberChef** — Encoding/decoding (Magic funksiya)
 - **sqlmap** — SQL injection avtomatlashtirish
 - **steghide / stegsolve / zsteg** — Steganography
