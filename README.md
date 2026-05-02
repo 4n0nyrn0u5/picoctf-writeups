@@ -1,7 +1,7 @@
 # 🚩 PicoCTF Writeups
 
 > **Platform:** [PicoCTF](https://picoctf.org/)  
-> **Kategoriya:** Web Exploitation · Cryptography · Forensics · OSINT  
+> **Kategoriya:** Web Exploitation · Cryptography · Forensics · General Skills · Reverse Engineering  
 > **Muallif:** [4n0nyrn0u5](https://github.com/4n0nyrn0u5)  
 > **Yangilangan:** 26.04.2026
 
@@ -14,13 +14,17 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 ```
 📦 picoctf-writeups
  ┣ 📄 README.md
- ┣ 📄 01_client_side_recon.md        → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
- ┣ 📄 02_http_and_headers.md         → GET aHEAD, WebDecode
- ┣ 📄 03_authentication_sessions.md  → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
- ┣ 📄 04_server_side_attacks.md      → Crack the Gate 1, SSTI1
- ┣ 📄 05_forensics_osint.md          → StegoRSA, Scavenger Hunt, Log Hunt
- ┣ 📄 06_cryptography.md             → interencdec, Mod 26, The Numbers, 13
- ┗ 📄 07_web_exploitation_medium.md  → 3v@l, Secrets
+ ┣ 📄 01_client_side_recon.md         → Inspect HTML, Includes, Insp3ct0r, Bookmarklet, Unminify, where are the robots
+ ┣ 📄 02_http_and_headers.md          → GET aHEAD, WebDecode
+ ┣ 📄 03_authentication_sessions.md   → Local Authority, dont-use-client-side, Cookie Monster, Old Sessions
+ ┣ 📄 04_server_side_attacks.md       → Crack the Gate 1, SSTI1
+ ┣ 📄 05_forensics_osint.md           → StegoRSA, Scavenger Hunt, Log Hunt
+ ┣ 📄 06_cryptography.md              → interencdec, Mod 26, The Numbers, 13
+ ┣ 📄 07_web_exploitation_medium.md   → 3v@l, Secrets
+ ┣ 📄 08_general_skills.md            → FANTASY CTF, Super SSH, Binary Search, Time Machine, Commitment Issues, MultiCode, Password Profiler, Piece by Piece, Binary Digits, SUDO MAKE ME A SANDWICH
+ ┣ 📄 09_web_command_injection.md     → ping-cmd
+ ┣ 📄 10_forensics.md                 → Hidden in plainsight, DISKO 1, Corrupted file, Flag in Flame
+ ┗ 📄 11_reverse_engineering.md       → bytemancy 0, bytemancy 1, Riddle Registry, Printer Shares
 ```
 
 ---
@@ -52,6 +56,25 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 | 21 | 13 | Cryptography | ⭐ | ROT13 |
 | 22 | 3v@l | Web | ⭐⭐⭐ | eval() injection / RCE |
 | 23 | Secrets | Web | ⭐⭐ | Hidden directory recon |
+| 24 | FANTASY CTF | General Skills | ⭐ | Netcat, interactive shell |
+| 25 | Super SSH | General Skills | ⭐ | SSH connection |
+| 26 | Binary Search | General Skills | ⭐⭐ | Binary search algorithm |
+| 27 | Time Machine | General Skills | ⭐⭐ | Git log, commit history |
+| 28 | Commitment Issues | General Skills | ⭐⭐ | Git checkout, forensics |
+| 29 | MultiCode | General Skills | ⭐⭐ | Multi-layer encoding |
+| 30 | Password Profiler | General Skills | ⭐⭐ | Wordlist generation, brute force |
+| 31 | Piece by Piece | General Skills | ⭐ | File exploration |
+| 32 | Binary Digits | General Skills | ⭐ | Binary to ASCII |
+| 33 | SUDO MAKE ME A SANDWICH | General Skills | ⭐⭐⭐ | Privilege escalation, GTFOBins |
+| 34 | ping-cmd | Web | ⭐⭐⭐ | OS Command Injection |
+| 35 | Hidden in plainsight | Forensics | ⭐⭐ | Steganography, strings |
+| 36 | DISKO 1 | Forensics | ⭐⭐ | Disk image forensics |
+| 37 | Corrupted file | Forensics | ⭐⭐ | Magic bytes, hex editing |
+| 38 | Flag in Flame | Forensics | ⭐⭐ | Image/Video steganography |
+| 39 | bytemancy 0 | Reverse Eng. | ⭐⭐ | XOR decryption |
+| 40 | bytemancy 1 | Reverse Eng. | ⭐⭐⭐ | Multi-layer reverse engineering |
+| 41 | Riddle Registry | Reverse Eng. | ⭐⭐ | Windows Registry forensics |
+| 42 | Printer Shares | Reverse Eng. | ⭐⭐ | SMB enumeration |
 
 ---
 
@@ -67,6 +90,15 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 - **Python** — Custom scripts, RSA decryption, A1Z26 decode
 - **gobuster / ffuf** — Directory enumeration
 - **Nmap** — Port scanning
+- **netcat (nc)** — Server ulanish, port testing
+- **ssh** — Masofaviy ulanish
+- **git** — Commit history tahlil
+- **Ghidra** — Binary decompilation
+- **smbclient / enum4linux** — SMB enumeration
+- **binwalk / foremost** — File carving, disk forensics
+- **xxd / hexedit** — Hex editing
+- **hydra / CUPP** — Brute force, wordlist generation
+- **GTFOBins** — Privilege escalation reference
 
 ---
 
@@ -78,7 +110,10 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 - [HackTricks](https://book.hacktricks.xyz/) — CTF va pentest reference
 - [CyberChef](https://gchq.github.io/CyberChef/) — Encoding/decoding tool
 - [dcode.fr](https://www.dcode.fr) — 500+ shifr decoder
-- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — Payload'lar to'plami
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — Payloadlar to'plami
+- [GTFOBins](https://gtfobins.github.io) — Linux privilege escalation
+- [Ghidra](https://ghidra-sre.org) — Bepul NSA decompiler
+- [revshells.com](https://www.revshells.com) — Reverse shell generator
 
 ---
 
