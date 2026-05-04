@@ -1,7 +1,7 @@
 # 🚩 PicoCTF Writeups
 
 > **Platform:** [PicoCTF](https://picoctf.org/)  
-> **Kategoriya:** Web Exploitation · Cryptography · Forensics · General Skills · Reverse Engineering  
+> **Kategoriya:** Web Exploitation · Cryptography · Forensics · General Skills · Reverse Engineering · Binary Exploitation  
 > **Muallif:** [4n0nyrn0u5](https://github.com/4n0nyrn0u5)  
 > **Yangilangan:** 26.04.2026
 
@@ -29,7 +29,11 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
  ┣ 📄 13_cryptography_2.md             → Bases, Codebook, Transformation, repetitions, 2warm, binhexa, endianness
  ┣ 📄 14_web_exploitation_2.md         → logon, Cookies, Quizploit, Shared Secrets
  ┣ 📄 15_forensics_2.md                → Obedient Cat, strings it, Glory of the Garden, Static ain't always noise, information, CanYouSee
- ┗ 📄 16_reverse_engineering_2.md      → Warmed Up, Lets Warm Up, vault-door-training, PW Crack 1, PW Crack 2, HashingJobApp, Glitch Cat
+ ┣ 📄 16_reverse_engineering_2.md      → Warmed Up, Lets Warm Up, vault-door-training, PW Crack 1, PW Crack 2, HashingJobApp, Glitch Cat
+ ┣ 📄 17_general_skills_3.md           → Nice netcat..., Verify, Scan Surprise, Flag Hunters
+ ┣ 📄 18_crypto_forensics_3.md         → Transformation (v2), hashcrack, Secret of the Polyglot
+ ┣ 📄 19_web_exploitation_3.md         → IntroToBurp, head-dump, RED, Ph4nt0m 1ntrud3r
+ ┗ 📄 20_binary_exploitation.md        → heap 0, format string 0, PIE TIME
 ```
 
 ---
@@ -117,34 +121,51 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 | 77 | PW Crack 2 | Reverse Eng. | ⭐⭐ | MD5 hash cracking |
 | 78 | HashingJobApp | Reverse Eng. | ⭐⭐ | MD5 hashing, automation |
 | 79 | Glitch Cat | Reverse Eng. | ⭐⭐ | chr() obfuscation |
+| 80 | Nice netcat... | General Skills | ⭐ | Netcat + ASCII decode |
+| 81 | Verify | General Skills | ⭐⭐ | SHA256 verification |
+| 82 | Scan Surprise | General Skills | ⭐⭐ | QR code decode |
+| 83 | Flag Hunters | General Skills | ⭐⭐ | Netcat, pwntools |
+| 84 | Transformation (v2) | Cryptography | ⭐⭐ | Unicode bitwise decode |
+| 85 | hashcrack | Cryptography | ⭐⭐ | MD5/SHA hash cracking |
+| 86 | Secret of the Polyglot | Forensics | ⭐⭐⭐ | Polyglot file analysis |
+| 87 | IntroToBurp | Web | ⭐⭐ | Burp Proxy, OTP bypass |
+| 88 | head-dump | Web | ⭐⭐ | Debug endpoint, heap dump |
+| 89 | RED | Forensics | ⭐⭐ | RGB channel steganography |
+| 90 | Ph4nt0m 1ntrud3r | Web | ⭐⭐⭐ | Header manipulation, fuzzing |
+| 91 | heap 0 | Binary Exploit | ⭐⭐⭐ | Heap buffer overflow |
+| 92 | format string 0 | Binary Exploit | ⭐⭐⭐ | Format string vulnerability |
+| 93 | PIE TIME | Binary Exploit | ⭐⭐⭐⭐ | ASLR/PIE bypass, address leak |
 
 ---
 
 ## 🛠️ Ishlatilgan toollar
 
 - **Browser DevTools** — Inspection, Sources, Network, Application
-- **Burp Suite** — HTTP interception va manipulation
-- **curl** — HTTP request manipulation
+- **Burp Suite** — HTTP interception, Proxy, Repeater, Intruder
+- **curl** — HTTP request manipulation, custom headers
 - **jwt.io** — JWT decode/encode
 - **CyberChef** — Encoding/decoding (Magic funksiya)
 - **sqlmap** — SQL injection avtomatlashtirish
 - **steghide / stegsolve / zsteg** — Steganography
-- **Python** — Custom scripts, RSA decryption, hashlib, socket
+- **Python** — Custom scripts, RSA, hashlib, socket, pwntools
 - **gobuster / ffuf** — Directory enumeration
 - **Nmap** — Port scanning
 - **netcat (nc)** — Server ulanish, port testing
-- **ssh** — Masofaviy ulanish
+- **ssh / scp** — Masofaviy ulanish va fayl ko'chirish
 - **git** — Commit history, branches, blame tahlil
 - **Ghidra** — Binary decompilation
+- **gdb + pwndbg** — Dynamic binary debugging
+- **pwntools** — Binary exploit framework
 - **smbclient / enum4linux** — SMB enumeration
 - **binwalk / foremost** — File carving, disk forensics
 - **xxd / hexedit** — Hex editing
 - **hydra / CUPP** — Brute force, wordlist generation
 - **exiftool** — Image metadata tahlil
 - **john / hashcat** — Hash cracking
+- **zbarimg / pyzbar** — QR code decode
+- **sha256sum / md5sum** — File integrity verification
 - **GTFOBins** — Privilege escalation reference
-- **strings** — Binary'dan matn chiqarish
-- **find / grep** — Fayl va matn qidirish
+- **strings / find / grep** — Matn va fayl qidirish
 
 ---
 
@@ -162,6 +183,8 @@ Ushbu repository mening PicoCTF platformasida yechgan challengelarim uchun profe
 - [revshells.com](https://www.revshells.com) — Reverse shell generator
 - [crackstation.net](https://crackstation.net) — Online hash cracker
 - [ExplainShell](https://explainshell.com) — Linux buyruqlarini tushuntirish
+- [pwn.college](https://pwn.college) — Binary exploitation labs
+- [pwntools docs](https://docs.pwntools.com) — Exploit framework
 
 ---
 
