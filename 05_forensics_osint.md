@@ -3,7 +3,7 @@
 > **Kategoriya:** Forensics · OSINT · Web Recon  
 > **Challenges:** StegoRSA · Scavenger Hunt · Log Hunt  
 > **Daraja:** Intermediate  
-
+> **Muallif:** [Anonymous]
 ---
 
 ## Umumiy tushuncha
