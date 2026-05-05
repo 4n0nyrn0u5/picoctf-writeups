@@ -3,7 +3,6 @@
 > **Kategoriya:** Web Exploitation — Client Side  
 > **Challenges:** Inspect HTML · Includes · Insp3ct0r · Bookmarklet · Unminify · where are the robots  
 > **Daraja:** Beginner  
-> **Muallif:** [Ism Familiya]
 
 ---
 
