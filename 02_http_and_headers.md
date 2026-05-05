@@ -3,7 +3,7 @@
 > **Kategoriya:** Web Exploitation — HTTP Protocol  
 > **Challenges:** GET aHEAD · WebDecode  
 > **Daraja:** Beginner → Intermediate  
-> **Muallif:** [Ism Familiya]
+> **Muallif:** [Anonymous]
 
 ---
 
