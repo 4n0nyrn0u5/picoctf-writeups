@@ -3,7 +3,6 @@
 > **Kategoriya:** Web Exploitation — Server-Side Attacks  
 > **Challenges:** Crack the Gate 1 · SSTI1  
 > **Daraja:** Intermediate  
-> **Muallif:** [Ism Familiya]
 
 ---
 
