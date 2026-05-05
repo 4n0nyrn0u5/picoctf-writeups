@@ -3,7 +3,7 @@
 > **Kategoriya:** Web Exploitation — Auth & Sessions  
 > **Challenges:** Local Authority · dont-use-client-side · Cookie Monster Secret Recipe · Old Sessions  
 > **Daraja:** Beginner → Intermediate  
-> **Muallif:** [Ism Familiya]
+> **Muallif:** [Anonymous]
 
 ---
 
